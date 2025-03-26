@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Online Medicine Ordering System</title>
+  <link rel="stylesheet" href="./../css/login.css">
+  <link rel="stylesheet" href="./../css/style.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="./../images/header/header.png" alt="brand-logo" class="logo">
+            <span class="brand-name">Medicare Plus</span>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./productlisting.html">Product-Listing</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href=".contact.html">Contact</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+                <li><a href="./payment.html">Payment</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <div class="container">
+    
+    
+    <div class="login-section">
+      <div class="login-box">
+    
+        <h2>Welcome Back!</h2>
+        <p>Login to your account to order medicines easily and securely.</p>
+        
+        
+        <form id="login-form" action="login.php" method="POST" onsubmit="return validateLoginForm()"> 
+         
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <small id="username-error" class="error-msg"></small>
+          </div>
+
+          
+         
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <small id="password-error" class="error-msg"></small>
+          </div>
+          
+         
+          <div class="checkbox-group">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label>
+          </div>
+
+          
+          <div class="password-toggle">
+            <input type="checkbox" id="toggle-password"> Show Password
+          </div>
+
+         
+          <button type="submit" class="login-btn">Login</button>
+          
+          
+          <p class="forgot-password-link"><a href="forgot-password.html">Forgot Password?</a></p>
+
+         
+          <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+          
+       
+    
+    </div>
+        </form>
+      </div>
+    </div>
+       
+       
+    
+    <div class="info-section">
+      <h3>Why Choose Our Service?</h3>
+      <ul>
+        <li><strong>Quick and easy ordering:</strong> Order your medicines with a few clicks.</li>
+        <li><strong>Secure transactions:</strong> Your information is always safe with us.</li>
+        <li><strong>Fast delivery:</strong> Get your medicines delivered to your doorstep.</li>
+        <li><strong>Trusted by thousands:</strong> Join a community of satisfied customers.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+       
