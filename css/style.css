@@ -1,6 +1,6 @@
 /*
 primary color - #736EFE
-secondary color - #cfd9df
+secondary color - #000000
 tertiary color - #fdfcfb
 */
 body{
@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #837dee;
+    background-color: #fbfbfb;
     padding: 15px 40px;
 }
 .logo-container{
