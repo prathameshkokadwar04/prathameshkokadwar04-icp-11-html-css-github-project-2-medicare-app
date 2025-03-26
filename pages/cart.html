@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare plus cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfcfb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 320px;
+            padding: 20px;
+            background: #cfd9df;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+        }
+        .product img {
+            width: 80px;
+            border-radius: 5px;
+        }
+        .product h3 {
+            color: #736EFE;
+            margin: 10px 0 5px;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .btn {
+            background: #736EFE;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #5a55da;
+        }
+        .quantity {
+            width: 50px;
+            padding: 5px;
+            margin: 5px 0;
+            text-align: center;
+        }
+        #cart-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #736EFE;
+            color: #fff;
+            border-radius: 5px;
+        }
+        #checkout {
+            display: none;
+            margin-top: 10px;
+            background: #28a745;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
+            <img src="./../images/ibuprofen.png" alt="Medicine">
+            <h3>Ibuprofen 400mg</h3>
+            <p>Reduces inflammation and pain</p>
+            <p>Price: 80</p>
+            <input type="number" class="quantity" min="1" value="1">
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./../images/cough-syrup.png" alt="Medicine">
+            <h3>Cough Syrup</h3>
+            <p>Soothes throat and relieves cough</p>
+            <p>Price: 100</p
+            <input type="number" class="quantity" min="1" value="1">
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./../images/antacid.png" alt="Medicine">
+            <h3>Antacid Tablets</h3>
+            <p>Relieves acidity and heartburn</p>
+            <p>Price: 60</p>
+            <input type="number" class="quantity" min="1" value="1">
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="./../images/antiseptic.png" alt="Medicine">
+            <h3>Antiseptic Cream</h3>
+            <p>Treats minor cuts and wounds</p>
+            <p>Price: 70</p>
+            <input type="number" class="quantity" min="1" value="1">
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div id="cart-message">Product added to cart!</div>
+        <button id="checkout" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        let cartCount = 0;
+        function addToCart() {
+            cartCount++;
+            document.getElementById('cart-message').style.display = 'block';
+            document.getElementById('checkout').style.display = 'block';
+        }
+        function checkout() {
+            alert('Proceeding to checkout');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
