@@ -5,7 +5,8 @@ tertiary color - #fdfcfb
 */
 body{
     margin: 0;
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: system-ui;
 }
 .navbar{
     display: flex;
