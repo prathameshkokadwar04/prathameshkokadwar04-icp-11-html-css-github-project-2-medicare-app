@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    /* font-family: monospace; */
+    font-family: system-ui;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #736EFE;
+    padding: 15px 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background:#736EFE;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #736EFE;  
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #48cae4; 
+}
+
+
+.hero {
+    background: #023e8a; 
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00b4d8; /* Sky Blue */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #48cae4; /* Light Teal */
+}
+
+
+.about-content, .services {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 15px #ccc;
+    margin: 30px;
+    border-radius: 8px;
+}
+
+.about-content h2, .services h2 {
+    color: #0077b6;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    flex: 1;
+    margin: 15px;
+    padding: 30px;
+    background: #caf0f8;  /* Light Cyan */
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box h3 {
+    font-size: 24px;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #0077b6;  
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #48cae4; 
+    text-decoration: none;
+    transition: 0.3s;
+
+font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+footer a:hover {
+    color: #00b4d8; /* Sky Blue */
+}
