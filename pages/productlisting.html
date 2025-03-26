@@ -26,6 +26,27 @@
         </div>
         </nav>
 
+        <div class="search-container">
+            <input list="medicine-list" class="search-bar" placeholder="Search for medicines...">
+            <datalist id="medicine-list">
+                <option value="Cough Syrup"></option>
+                <option value="Pain Relief Tablet"></option>
+                <option value="Vitamin B12 Injection"></option>
+                <option value="Paracetamol"></option>
+                <option value="Antibiotic"></option>
+                <option value="Diabetes Injection"></option>
+            </datalist>
+        </div>
+        <div class="filter-container">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="syrup">Syrup</option>
+                <option value="tablets">Tablets</option>
+                <option value="injection">Injection</option>
+            </select>
+        </div>
+
         <div class="product-listing">
             <div class="product-card">
                 <img src="./../images/icons/cough-syrup.png" alt="cough syrup" class="product-image">
