@@ -7,41 +7,39 @@
     <link rel="stylesheet" href="./../css/style.css">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fdfcfb;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
         .container {
-            width: 320px;
+            width: 300px;
             padding: 20px;
+            /* display: flex; */
+            margin-left: 650px ;
             background: #cfd9df;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-top: 60px; /* Give some space for the navbar */
         }
+
         .product {
             margin-bottom: 20px;
             padding: 10px;
             background: #fff;
             border-radius: 8px;
         }
+
         .product img {
             width: 80px;
             border-radius: 5px;
         }
+
         .product h3 {
             color: #736EFE;
             margin: 10px 0 5px;
         }
+
         .product p {
             margin: 5px 0;
         }
+
         .btn {
             background: #736EFE;
             color: #fff;
@@ -52,15 +50,18 @@
             cursor: pointer;
             transition: 0.3s;
         }
+
         .btn:hover {
             background: #5a55da;
         }
+
         .quantity {
             width: 50px;
             padding: 5px;
             margin: 5px 0;
             text-align: center;
         }
+
         #cart-message {
             display: none;
             margin-top: 20px;
@@ -69,6 +70,7 @@
             color: #fff;
             border-radius: 5px;
         }
+
         #checkout {
             display: none;
             margin-top: 10px;
@@ -82,11 +84,13 @@
     </style>
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-                <img src="./../images/header/header.png" alt="brand-logo" class="logo">
-                <span class="brand-name">Medicare Plus</span>
-         </div>
+            <img src="./../images/header/header.png" alt="brand-logo" class="logo">
+            <span class="brand-name">Medicare Plus</span>
+        </div>
         <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="./../index.html">Home</a></li>
@@ -98,25 +102,25 @@
                 <li><a href="./login.html">Login</a></li>
             </ul>
         </div>
-        </nav>
+    </nav> 
 
+    <!-- Container for Products -->
     <div class="container">
         <div class="product">
-            <br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
             <img src="./../images/ibuprofen.png" alt="Medicine">
             <h3>Ibuprofen 400mg</h3>
             <p>Reduces inflammation and pain</p>
             <p>Price: 80</p>
             <input type="number" class="quantity" min="1" value="1">
-            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            <button class="btn" onclick="addToCart('Ibuprofen 400mg', 80)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="./../images/cough-syrup.png" alt="Medicine">
             <h3>Cough Syrup</h3>
             <p>Soothes throat and relieves cough</p>
-            <p>Price: 100</p
+            <p>Price: 100</p>
             <input type="number" class="quantity" min="1" value="1">
-            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            <button class="btn" onclick="addToCart('Cough Syrup', 100)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="./../images/antacid.png" alt="Medicine">
@@ -124,7 +128,7 @@
             <p>Relieves acidity and heartburn</p>
             <p>Price: 60</p>
             <input type="number" class="quantity" min="1" value="1">
-            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            <button class="btn" onclick="addToCart('Antacid Tablets', 60)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="./../images/antiseptic.png" alt="Medicine">
@@ -132,7 +136,7 @@
             <p>Treats minor cuts and wounds</p>
             <p>Price: 70</p>
             <input type="number" class="quantity" min="1" value="1">
-            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            <button class="btn" onclick="addToCart('Antiseptic Cream', 70)">Add to Cart</button>
         </div>
         <div id="cart-message">Product added to cart!</div>
         <button id="checkout" onclick="checkout()">Checkout</button>
@@ -140,20 +144,17 @@
 
     <script>
         let cartCount = 0;
-        function addToCart() {
+        function addToCart(productName, price) {
             cartCount++;
             document.getElementById('cart-message').style.display = 'block';
             document.getElementById('checkout').style.display = 'block';
+            console.log(`Added ${productName} to cart. Price: ${price}`);
         }
+
         function checkout() {
             alert('Proceeding to checkout');
         }
     </script>
+
 </body>
 </html>
-
-
-
-
-
-
