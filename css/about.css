@@ -11,131 +11,105 @@ body{
     padding: 15px 40px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #fdfcfb; 
     color: #333;
-    background:#736EFE;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
+h1, h2, h3 {
+    color: #736EFE; 
+}
 
+a {
+    color: #736EFE; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cfd9df; 
+}
+
+/* Header Styles */
 header {
-    background: #736EFE;  
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #736EFE; /* Primary color */
+    color: #fdfcfb; 
+    padding: 10px 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: 0.3s;
+.nav-container {
+    display: flex;
+    justify-content: center;
 }
 
-nav a:hover {
-    color: #48cae4; 
-}
-
-
-.hero {
-    background: #023e8a; 
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.btn {
+.nav-links li {
     display: inline-block;
-    background: #00b4d8; /* Sky Blue */
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
+    margin: 0 15px;
 }
 
-.btn:hover {
-    background: #48cae4; /* Light Teal */
+.nav-links a {
+    color: #fdfcfb; /* Tertiary color */
+    font-weight: bold;
 }
 
+.nav-links a:hover {
+    color: #cfd9df; /* Secondary color */
+}
 
-.about-content, .services {
-    padding: 60px 20px;
+/* Hero Section */
+.hero {
+    background-color: #cfd9df; /* Secondary color */
+    color: #333;
     text-align: center;
-    background: white;
-    box-shadow: 0 0 15px #ccc;
-    margin: 30px;
-    border-radius: 8px;
+    padding: 50px 20px;
+}
+
+.hero .btn {
+    background-color: #736EFE; /* Primary color */
+    color: #fdfcfb; /* Tertiary color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #cfd9df; /* Secondary color */
+    color: #333;
+}
+
+/* About Section */
+.about-content, .services {
+    background-color: #fdfcfb; /* Tertiary color */
+    color: #333;
+    padding: 30px 20px;
 }
 
 .about-content h2, .services h2 {
-    color: #0077b6;
-    font-size: 32px;
+    border-bottom: 2px solid #736EFE; 
+    padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-/* Services Section */
-.services {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 .service-box {
-    flex: 1;
-    margin: 15px;
-    padding: 30px;
-    background: #caf0f8;  /* Light Cyan */
-    box-shadow: 0 0 10px #ccc;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.service-box:hover {
-    transform: translateY(-10px);
+    border: 1px solid #cfd9df; /* Secondary color */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fdfcfb; /* Tertiary color */
+    color: #333;
 }
 
 .service-box h3 {
-    font-size: 24px;
-    color: #0077b6;
-    margin-bottom: 10px;
+    color: #736EFE; /* Primary color */
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    background: #0077b6;  
-    color: white;
-    padding: 20px;
-}
-
-footer a {
-    color: #48cae4; 
-    text-decoration: none;
-    transition: 0.3s;
-
-font-size: 20px;
-    font-weight: bold;
-    color: black;
-
-footer a:hover {
-    color: #00b4d8; /* Sky Blue */
+.service-box:hover {
+    background-color: #cfd9df; /* Secondary color */
+    color: #333;
 }
