@@ -34,9 +34,9 @@ a:hover {
     color: #cfd9df; 
 }
 
-/* Header Styles */
+
 header {
-    background-color: #736EFE; /* Primary color */
+    background-color: #736EFE; 
     color: #fdfcfb; 
     padding: 10px 0;
 }
@@ -52,25 +52,25 @@ header {
 }
 
 .nav-links a {
-    color: #fdfcfb; /* Tertiary color */
+    color: #fdfcfb; 
     font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #cfd9df; /* Secondary color */
+    color: #cfd9df; 
 }
 
 /* Hero Section */
 .hero {
-    background-color: #cfd9df; /* Secondary color */
+    background-color: #cfd9df; 
     color: #333;
     text-align: center;
     padding: 50px 20px;
 }
 
 .hero .btn {
-    background-color: #736EFE; /* Primary color */
-    color: #fdfcfb; /* Tertiary color */
+    background-color: #736EFE; 
+    color: #fdfcfb; 
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -78,17 +78,23 @@ header {
 }
 
 .hero .btn:hover {
-    background-color: #cfd9df; /* Secondary color */
+    background-color: #cfd9df; 
     color: #333;
 }
 
-/* About Section */
+
 .about-content, .services {
-    background-color: #fdfcfb; /* Tertiary color */
+    background-color: #fdfcfb; /
     color: #333;
-    padding: 30px 20px;
+    padding: 30px 20px
 }
 
+.about-content, .services {
+    background-color: #fdfcfb; /
+    color: #333;
+    padding: 30px 20px
+
+}
 .about-content h2, .services h2 {
     border-bottom: 2px solid #736EFE; 
     padding-bottom: 5px;
@@ -97,19 +103,19 @@ header {
 
 
 .service-box {
-    border: 1px solid #cfd9df; /* Secondary color */
+    border: 1px solid #cfd9df; 
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: #fdfcfb; /* Tertiary color */
+    background-color: #fdfcfb; 
     color: #333;
 }
 
 .service-box h3 {
-    color: #736EFE; /* Primary color */
+    color: #736EFE; 
 }
 
 .service-box:hover {
-    background-color: #cfd9df; /* Secondary color */
+    background-color: #cfd9df; 
     color: #333;
 }
