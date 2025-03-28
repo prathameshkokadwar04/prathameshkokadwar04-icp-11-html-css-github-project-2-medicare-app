@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#f4f4f4;
+}
+
+/* Billing */
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkblue;
+}
+.address-form{
+    background-color: white;
+    height: 620px;
+    width: 500px;
+    margin: 30px;
+    margin-left: 500px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border: 1px solid black;
+}
+
+.billing-heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+.labels {
+    font-size: 15px;
+    color: black;
+    margin-right: 135px;
+}
+
+.inputs {
+    margin:0 7px ;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(51, 9, 91);
+}
+
+/* Payment */
+
+.payment-form{
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    margin: 30px;
+    margin-left: 500px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border: 1px solid black;
+
+}
+.payment-heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.btn {
+    background: #f26969;
+    color:#000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.btn:hover {
+    background: #0567cf;
+    box-shadow: 1px 3px;
+}
