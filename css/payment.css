@@ -7,15 +7,35 @@ body {
 
 .heading {
     text-align: center;
+    font-size: 40px;
+    font-weight: bold
 }
-.address-section{
+.address-form{
     background-color: white;
-    height: 500px;
+    height: 6000px;
     width: 400px;
-    text-align: center;
     margin: 50px;
     margin-left: 300px;
-    font-size: 25px;
-    font-weight: bold;
     border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
 }
+
+.billing-heading {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.labels {
+    font-size: 15px;
+    color: rgb(51, 9, 91);
+    margin-right: 135px;
+}
+
+.inputs {
+    margin:0 3px ;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 9, 91);
+}
+
