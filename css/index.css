@@ -153,6 +153,37 @@ body {
     width: 100%;
     display: block;
 }
+.review {
+    width: 80%;
+    margin: 50px auto;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.testimonial-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonial {
+    background: #eafaf1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.testimonial p {
+    font-size: 14px;
+}
+.customer-name {
+    font-weight: bold;
+}
+.date {
+    font-size: 12px;
+    color: gray;
+}
 
 
 
