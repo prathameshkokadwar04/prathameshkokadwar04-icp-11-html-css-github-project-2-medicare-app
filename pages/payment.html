@@ -27,9 +27,61 @@
 
     <h1 class="heading">Payment page</h1>
         
-        <div class="address-section">
-            Billing Address  
+        <div class="address-form">
+            <h3 class="billing-heading">Billing Address</h3>  
+            <form action="#"> 
+                <label for="name" class="labels"><b>Full Name :-</b></label><br> <br>
+                <input type="text" id="name" required placeholder="First name" class="inputs">
+                <input type="text" id="name" required placeholder="Middle name" class="inputs">
+                <input type="text" id="name" required placeholder="Last name" class="inputs">
+                <br><br>
+
+                <label for="email" class="labels"><b>Email :-</b></label><br><br>
+                <input type="email" id="email" name="email" required  placeholder="Enter your email" class="inputs">
+                <br><br>
+
+                <label for="address" class="labels"><b>Address :-</b></label><br><br>
+                <input type="text" id="address" required placeholder="Street" class="inputs">
+                <input type="text" id="address" required placeholder="Landmark" class="inputs">
+                <input type="text" id="address" required placeholder="Address" class="inputs">
+                <input type="number" id="pincode" required placeholder="pincode" class="inputs">
+                <br> <br>
+
+                <label for="inputaddress" class="labels"><b>City :-</b></label>         
+               <label for="inputaddress" class="labels"><b>States :-</b></label><br> <br>
+
+                <input type="text" name="inputcity" id="inputcity" placeholder="City" class="inputs">
+
+                <input list="selectstate" placeholder="Select state" required/>
+        <datalist id="selectstate">
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chattisgarh</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Himachal Pradesh</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odissa</option>
+        <option>Punjab</option>
+        <option>West Bangal</option>
+      </datalist>
+
+
+        
+
+            </form>
         </div>
+        
 
     <footer>
         <p>&copy; 2025 Medicare App. All rights reserved.</p>
