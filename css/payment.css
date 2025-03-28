@@ -15,7 +15,7 @@ body {
 }
 .address-form{
     background-color: white;
-    height: 600px;
+    height: 620px;
     width: 500px;
     margin: 30px;
     margin-left: 500px;
@@ -72,7 +72,7 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 700px;
+    margin-left: 150px;
 }
 
 .btn:hover {
