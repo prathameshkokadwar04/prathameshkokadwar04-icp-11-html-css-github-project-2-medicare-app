@@ -1,16 +1,20 @@
 .bck{
     height : 600px;
     width: 1520px;
-    background: #d5cfcf;
+    background-image: url(https://img.freepik.com/premium-photo/flat-lay-medical-tools-colored-background_146377-1407.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 }
 
 .p1{
-    color: #6b93e8;
+    color: black;
     padding-top: 90px;
     padding-left: 400px;
     font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
 }
 
 .p2{
@@ -34,15 +38,11 @@ margin-left: 12%;
 }
 
 .s1{
-    border: 1px solid black;
+   
     cursor: pointer;
 }
 
-.s1:hover{
-    box-shadow: 10px 10px 10px 5px #290033;
-    transition: 1s;
-    border-radius: 10%;
-}
+
 .d2{
     display: inline-block;
     margin-left: 15%;
@@ -63,6 +63,11 @@ margin-left: 12%;
     position: relative;
 }
 
+.coupans{
+    position: absolute;
+    padding:10px
+}
+
 .div3{
     position: absolute;
     left: 0;
@@ -80,7 +85,7 @@ margin-left: 12%;
     border-radius: 5px;
     font-size: 16px;
 }
-body {
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
