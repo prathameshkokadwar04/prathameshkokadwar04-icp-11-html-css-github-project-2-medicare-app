@@ -12,7 +12,7 @@ body{
 }
 
 
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Color Variables */
+
 :root {
     --primary: #736EFE;
     --secondary: #cfd9df;
@@ -29,14 +29,14 @@ body{
     --text-light: #555;
 }
 
-/* Body Styling */
+
 body {
     background: var(--tertiary);
     color: var(--text-dark);
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
     background: var(--primary);
     color: var(--tertiary);
@@ -78,7 +78,7 @@ header {
     transform: scale(1.1);
 }
 
-/* Hero Section */
+
 .hero {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     color: var(--tertiary);
@@ -115,7 +115,7 @@ header {
     transform: translateY(-5px);
 }
 
-/* About Section */
+
 .about-content, .mission {
     text-align: center;
     padding: 60px 20px;
@@ -136,7 +136,7 @@ header {
     line-height: 1.8;
 }
 
-/* Services Section */
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -173,7 +173,6 @@ header {
     color: var(--text-light);
 }
 
-/* Footer */
 footer {
     background: var(--primary);
     color: var(--tertiary);
@@ -182,7 +181,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -194,7 +193,7 @@ footer {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -213,5 +212,3 @@ footer {
         font-size: 1rem;
     }
 }
-
-
